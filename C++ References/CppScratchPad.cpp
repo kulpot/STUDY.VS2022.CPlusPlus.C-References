@@ -9,10 +9,16 @@ using std::endl;
 // references - are constant, means cant change a references that referencing after set
 // ampersand(&) - references
 
+struct Cow
+{
+	int mooCount;
+};
+
 void main()
 {
 	int i = 51;
 	int& j = i;			// j is references the i , set in constant
+	//= i;
 	j = 71;
 	cout << i << endl;
 }
