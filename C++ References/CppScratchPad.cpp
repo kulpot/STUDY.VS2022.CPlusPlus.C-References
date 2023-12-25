@@ -6,9 +6,14 @@ using std::endl;
 // ---------------------------------------- C++ References ------------------------------------------------
 // ref link:https://www.youtube.com/watch?v=J3T-8N9QK2A&list=PLRwVmtr-pp05AW78n3IkMJ3M1dlQ-wgv1&index=7
 
+// references - 
+
 void main()
 {
-
+	int i = 51;
+	int& j = i;
+	j = 71;
+	cout << i << endl;
 }
 
 
