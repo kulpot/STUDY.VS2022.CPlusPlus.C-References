@@ -7,11 +7,12 @@ using std::endl;
 // ref link:https://www.youtube.com/watch?v=J3T-8N9QK2A&list=PLRwVmtr-pp05AW78n3IkMJ3M1dlQ-wgv1&index=7
 
 // references - 
+// ampersand(&) - reference
 
 void main()
 {
 	int i = 51;
-	int& j = i;
+	int& j = i;			// j is references the i , 
 	j = 71;
 	cout << i << endl;
 }
