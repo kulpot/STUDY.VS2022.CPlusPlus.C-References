@@ -6,7 +6,10 @@ using std::endl;
 // ---------------------------------------- C++ References ------------------------------------------------
 // ref link:https://www.youtube.com/watch?v=J3T-8N9QK2A&list=PLRwVmtr-pp05AW78n3IkMJ3M1dlQ-wgv1&index=7
 
+void main()
+{
 
+}
 
 
 
