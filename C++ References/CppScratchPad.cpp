@@ -8,19 +8,58 @@ using std::endl;
 
 // references - are constant, means cant change a references that referencing after set
 // ampersand(&) - references
+/*
 
+int a = 102;
+int b = 204;
+int& r = a;
+
+cout << r << endl;
+
+r = 123;
+cout << r << endl;
+
+r = b;
+cout << r << endl;
+
+When you assign
+
+r = b;
+
+That changes r's value but it doesn't make r reference b. Try this:
+
+r = b;
+r = 54321;
+cout << b << endl;
+
+b will still be its original value, and a's value will change. You can also print the address of the variables. After assigning b to r, print b's address, r's address, and a's address. You will see that r and a still share the same address.
+
+*/
 struct Cow
 {
 	int mooCount;
 };
 
 void main()
-{
-	int i = 51;
-	int& j = i;			// j is references the i , set in constant
-	//= i;
-	j = 71;
-	cout << i << endl;
+{			// REASON to use a references are somekind of solution for biglooooooooonUgggggglyVariableNaaaammmmmeeee
+	Cow biglooooooooonUgggggglyVariableNaaaammmmmeeee;
+	biglooooooooonUgggggglyVariableNaaaammmmmeeee.mooCount = 999;
+	Cow& d = biglooooooooonUgggggglyVariableNaaaammmmmeeee;			// d - runtime construct
+	d.mooCount = 99;
+	cout << biglooooooooonUgggggglyVariableNaaaammmmmeeee.mooCount << endl;
+
+	Cow betsy;
+	betsy.mooCount = 999;
+	Cow& c = betsy;			// c - runtime construct
+	c.mooCount = 13;
+	cout << betsy.mooCount << endl;
+	//cout << (*betsy).mooCount << endl; // pointers
+
+	//int i = 51;
+	//int& j = i;			// j is references the i , set in constant
+	////= i;
+	//j = 71;
+	//cout << i << endl;
 }
 
 
