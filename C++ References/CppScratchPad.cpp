@@ -6,13 +6,13 @@ using std::endl;
 // ---------------------------------------- C++ References ------------------------------------------------
 // ref link:https://www.youtube.com/watch?v=J3T-8N9QK2A&list=PLRwVmtr-pp05AW78n3IkMJ3M1dlQ-wgv1&index=7
 
-// references - 
-// ampersand(&) - reference
+// references - are constant, means cant change a references that referencing after set
+// ampersand(&) - references
 
 void main()
 {
 	int i = 51;
-	int& j = i;			// j is references the i , 
+	int& j = i;			// j is references the i , set in constant
 	j = 71;
 	cout << i << endl;
 }
